@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+    <title>Tienda Bandhan</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logotype">Bandhan</h1>
+            <button class="open-menu" id="open-menu"></button>
+            <i class="bi bi-list"></i>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x-circle"></i>
+            </button>
+            <header>
+                <h1 class="logotype">Tienda Bandhan</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="menuButton returnButton" href="./index.html">
+                            <i class='bx bxs-left-arrow-circle'></i> Seguir comprando 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menuButton commerceButton active" href="./carrito.html">
+                            <i class='bx bxs-cart'></i> Carrito
+                        </a>
+                    </li> 
+                </ul>
+            </nav>
+            <footer>
+                <p class="footerText">© 2023 Bandhan</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="mainTitle"> Carrito </h2>
+            <div class="commerce-container">
+                <p id="empty-car" class="empty-car">Tu carrito está vacío <i class='bx bx-sad' ></i></i></p>
+
+                <div id="products-commerce" class="products-commerce disabled"> 
+
+                    </div>
+
+                    <div id="actions-commerce" class="actions-commerce disabled">
+                        <div class="left-actions">
+                            <button id="actions-commerce-vaciar" class="actions-commerce-vaciar">Vaciar carrito</button>
+                        </div>
+                        <div class="actions-commerce-derecha">
+                            <div class="actions-commerce-total">
+                                <p>Total:</p>
+                                <p id="total">$82.50</p>
+                            </div>
+                            <button id="actions-commerce-comprar"class="actions-commerce-comprar">Comprar ahora</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p id="bought-commerce"class="bought-commerce disabled">Muchas gracias por tu compra  <i class="bi bi-emoji-laughing"></i></i></p>
+                
+            </div>
+        </main>
+    </div>
+
+    <script src="./carrito.js"></script>
+    <script src="./menu.js"></script>
+    
+</body>
+</html>
